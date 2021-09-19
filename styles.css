@@ -12,10 +12,12 @@ body {
 .header {
     font-size: larger;
     font-weight: 900;
+    color: white;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 16px 32px;
+    background-color: #1F2937;
 }
 
 .logo {
@@ -36,12 +38,22 @@ ul, li {
     margin: 0px;
     padding: 0px;
     gap: 8px;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.first-module {
+    background-color: #1F2937;
+    color: white;
 }
 
 .container {
     display: flex;
     justify-content: center;
-    align-items: center;
     flex: 1;
 }
 
@@ -49,6 +61,7 @@ ul, li {
     height: 100vh;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }
 
 button {
@@ -58,15 +71,84 @@ button {
     border: 2px;
     border-radius: 8px;
     width: 110px;
-    height: 35px
+    height: 35px;
 }
 
 .placeholder {
     background-color: lightgrey;
-    width: 400px;
-    height: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 32px;
+    width: 450px;
+    height: 250px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    margin: 32px 64px;
+    justify-content: center;
+    width: auto;
+}
+
+h1 {
+    margin-bottom: -10px;
+}
+
+.second-module {
+    display: flex;
+}
+
+.info-module {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.captioned-images {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0px;
+    text-align: center;
+    width: 250px;
+}
+
+.captioned-images .placeholder {
+    border-radius: 10px;
+    border: 4px blue solid;
+    width: 150px;
+    height: 150px;
+    margin: 0;
+}
+
+.testimonial {
+    background-color: lightgrey;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.quote {
+    font-size: 32px;
+    font-style: italic;
+    padding: 0 15rem;
+}
+
+h3 {
+    text-align: end;
+}
+
+.call-to-action {
+    display: flex;
+    flex-direction: column;
+    height: 10rem;
+    width: 1000px;
+    border-radius: 10px;
+    background-color: #3882f6;
+    color: white;
+    justify-content: center;
+    align-items: space-around;
 }
