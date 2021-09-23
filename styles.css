@@ -1,28 +1,43 @@
 * {
-    border: 2px red solid;
+    /* border: 2px red solid; */
+    margin: 0px;
+    padding: 8px;
+}
+
+html {
+    font-size: 100%;
+}
+
+strong {
+    padding: 0px;
+}
+
+div{
+    padding: 8px;
 }
 
 body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    flex: 1;
+    height: 200vh;
+
 }
 
 .header {
     font-size: larger;
     font-weight: 900;
     color: white;
+    height: 50px;
     display: flex;
-    align-items: center;
     justify-content: space-between;
     padding: 16px 32px;
     background-color: #1F2937;
+    flex: 0;
 }
 
 .logo {
     text-align: center;
-
 }
 
 .header-links {
@@ -49,19 +64,28 @@ a {
 .first-module {
     background-color: #1F2937;
     color: white;
+    display: flex;
 }
 
 .container {
     display: flex;
     justify-content: center;
-    flex: 1;
+    align-items: center;
 }
 
-.content {
-    height: 100vh;
+#content {
+    flex: 1;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    padding: 0;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    padding: 0;
 }
 
 button {
@@ -84,12 +108,20 @@ button {
     height: 250px;
 }
 
+.registration {
+    border: 1px white solid;
+    border-radius: 8px;
+    margin: 1em 0 0 0;
+}
+
 .info {
     display: flex;
     flex-direction: column;
     margin: 32px 64px;
-    justify-content: center;
+    justify-content: space-around;
+    align-items: flex-start;
     width: auto;
+    padding: 8px;
 }
 
 h1 {
@@ -113,7 +145,7 @@ h1 {
     flex-wrap: wrap;
     margin: 0px;
     text-align: center;
-    width: 250px;
+    width: 200px;
 }
 
 .captioned-images .placeholder {
@@ -125,10 +157,10 @@ h1 {
 }
 
 .testimonial {
-    background-color: lightgrey;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    flex: 1;
 }
 
 .quote {
@@ -139,16 +171,41 @@ h1 {
 
 h3 {
     text-align: end;
+    padding: 1rem;
+}
+
+.third-module {
+    display: flex;
+    background-color: lightgrey;
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
 }
 
 .call-to-action {
     display: flex;
     flex-direction: column;
-    height: 10rem;
-    width: 1000px;
-    border-radius: 10px;
-    background-color: #3882f6;
-    color: white;
+    width: 700px;
+    height: 100px;
     justify-content: center;
-    align-items: space-around;
+}
+
+.fourth-module {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3882f6;
+    border-radius: 8px;
+    flex: .5;
+}
+
+.footer-text {
+    text-align: center;
+}
+
+button {
+    margin: 8px;
+    border: 1px white solid;
+    text-align: center;
 }
